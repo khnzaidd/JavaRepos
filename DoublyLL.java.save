@@ -1,0 +1,49 @@
+import java.util.*;
+class DoublyLL{
+	private class Node{
+		Node prev;
+		Node next;
+		int data;
+		Node(int x){
+			data=x;
+			prev=null;
+			next=null;
+		}
+	}
+	private Node head;
+	public DoublyLL(){
+		head=null;
+	}
+	public void createList(int n){
+		Node temp=null,t=null;
+		Scanner sc=new Scanner(System.in);
+		for(int i=1;i<=n;i++){
+			System.out.println("Enter data: ");
+			temp=new Node(sc.nextInt());
+			if(i==1){
+				head=temp;
+				t=head;
+			}else{
+				t.next=temp;
+				temp.prev=t;
+				t=t.next;
+			}
+		}
+	}
+	public void insertNode(int data,int pos){
+		
+	public void traverse(){
+		Node p=head;
+		if(p==null){
+			System.out.println("List is empty");
+			return;
+		}else{
+			do{
+				System.out.println(p.data+" ");
+				p=p.next;
+			}while(p!=null);
+		}
+		System.out.println();
+	}
+}
+

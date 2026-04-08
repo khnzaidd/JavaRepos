@@ -1,0 +1,11 @@
+class LlStack{
+	private class Node{
+		int data;
+		Node next;
+		Node(int data){
+	}
+	private Node top;
+	public void push(int data){
+		Node nd=new Node(data);
+		if(top==null){
+			
