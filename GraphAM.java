@@ -1,3 +1,4 @@
+import java.util.*;
 class GraphAM{
 	private int Vcnt,Ecnt;
 	private boolean digraph;
@@ -65,6 +66,13 @@ class GraphAM{
 				System.out.print(j+" ");
 			}
 			System.out.println();
+		}
+	}
+	public void randE(GraphAM g,int e){
+		for(int i=0;i<e;i++){
+			int v=(int)(g.v()*Math.random());
+			int w=(int)(g.v()*Math.random());
+			g.insert(v,w);
 		}
 	}
 

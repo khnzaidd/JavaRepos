@@ -1,3 +1,4 @@
+
 class GraphAMMain{
 	public static void main(String[] args){
 		GraphAM gm=new GraphAM(5,false);
@@ -31,6 +32,9 @@ class GraphAMMain{
                 boolean dresult2=dgp2.exists();
                 System.out.println("between (0-4): "+dresult2);
                 at.show(at);
+		GraphAM rd=new GraphAM(6,false);
+		rd.randE(rd,10);
+		rd.show(rd);
         }
 }
 
